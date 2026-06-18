@@ -37,6 +37,7 @@ for column in df.columns:
         le = LabelEncoder()
 
         df[column] = le.fit_transform(df[column])
+        
 
         label_encoders[column] = le
 
